@@ -10,8 +10,8 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**") // Adjust this path as needed
                 .allowedOrigins(
-                    "https://dm-front-code-project-odqobjsmz-vijays-projects-b5a44689.vercel.app",
-                    "https://dm-front-code-project.vercel.app"
+                    "https://dms-back-end1-production.up.railway.app"
+                 
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowCredentials(true);
